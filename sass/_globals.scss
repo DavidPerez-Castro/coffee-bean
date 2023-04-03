@@ -1,0 +1,339 @@
+@use "components";
+
+@mixin section-display {
+    width: 100%;
+    margin: auto;
+    padding: 3rem;
+}
+
+@mixin section-display-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+@mixin section-display-dfd {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+@mixin section-footer-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin section-footer-sn {
+    display: flex;
+    align-items: center;
+
+}
+
+html {
+    min-width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: components.$background-color;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.logo a img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+}
+
+.icon-mn {
+    cursor: pointer;
+    position: sticky;
+    z-index: 2;
+    display: none;
+}
+
+.sec-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include section-display();
+    .container-hm {
+        width: 100%;
+        @include section-display-menu();
+    .home-cta {
+        @include section-display-dfd();
+        flex: 0.7;
+        .cta-text {
+            color: components.$color-main;
+        }
+        .home-title {
+            width: 18.5rem;
+            font-size: 2rem;
+            color: components.$text-color;
+            text-align: center;
+        }
+        .home-description {
+            max-width: 17rem;
+            color: components.$text-color;
+        }
+        .lead-magnet {
+            max-width: 17.5rem;
+            .input-col {
+                max-width: 14rem;
+                input {
+                    background-color: black;
+                    border-color: components.$background-color;
+                    color: components.$text-color;
+                }
+            }
+        }
+    }
+    .home-img img {
+        @include section-display-dfd();
+        width: 25vw;
+        height: 45vw;
+    }
+    }
+}
+
+.sec-features {
+    @include section-display();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .intro {
+        text-align: center;
+        h3 {
+            font-size: 1.8rem;
+            color: components.$text-color;
+        }
+        p {
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+    .features {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .text {
+            padding: 2rem 0;
+            flex: 1;
+            .feature {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .description {
+                    margin-left: 1rem;
+                    max-width: 20rem;
+                    .description-title {
+                        font-size: 1.15rem;
+                        color: components.$text-color;
+                    }
+                    .description-text {
+                        font-size: 1rem;
+                        color: components.$text-color-soft;
+                    }
+                }
+            }
+        }
+        .image {
+            img {
+                max-width: 17rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+.sec-benefits {
+    border-top: 1px solid #ddd;
+    .intro {
+        @extend .sec-features, .intro;
+        color: components.$text-color;
+    }
+    .benefit-cards {
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+        color: components.$text-color;
+    }
+}
+
+.sec-kpis {
+    width: 100%;
+    background-color: components.$color-main;
+    color: white;
+    padding: 4rem;
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .desc {
+            font-size: 0.9rem;
+            color: #ffffffaa;
+        }
+    }
+}
+
+.sec-onboarding {
+    .intro {
+        @extend .sec-features, .intro;
+        color: components.$text-color;
+    }
+    .steps {
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: components.$text-color;
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.sec-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: components.$color-footer;
+    padding: 5rem;
+    /* background-image:  url("../assets/img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: 100%;
+    @include section-display();
+    .container-cta {
+        width: 100%;
+        @include section-display-menu();
+    .cta {
+        @include section-display-dfd();
+        h4 {
+            font-size: 2rem;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1rem;            
+        }
+    }
+    .img-bg {
+        img{
+            width: 15rem;
+            height: 19rem;
+            border-radius: 2rem;
+        }
+    }
+    }
+}
+
+.sec-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include section-display();
+    .container-ft {
+        @include section-footer-menu();
+        .ft {
+            p {
+                text-align: center;
+                color: components.$text-color;
+            }
+        }
+        .sn {
+            @include section-footer-sn();
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .icon-mn {
+        display: block;
+    }
+
+    .nav ul.main-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav ul.main-menu li {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .sec-onboarding {
+        .steps {
+            flex-direction: column;
+            .icon-desc {
+                .title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .sec-cta {
+        .cta {
+            text-align: center;
+        }
+        .img-bg {
+            img {
+                max-width: 10rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    .sec-benefits {
+        .intro {
+            text-align: center;
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .sec-features {
+        .intro {
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
