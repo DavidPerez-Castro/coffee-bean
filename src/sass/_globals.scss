@@ -35,7 +35,7 @@
 }
 
 html {
-    min-width: 100vw;
+    max-width: 100vw;
 }
 
 body {
@@ -161,6 +161,7 @@ body {
 }
 
 .sec-benefits {
+    @include section-display();
     border-top: 1px solid #ddd;
     .intro {
         @extend .sec-features, .intro;
@@ -174,10 +175,10 @@ body {
 }
 
 .sec-kpis {
-    width: 100%;
     background-color: components.$color-main;
     color: white;
     padding: 4rem;
+    @include section-display();
     .kpi {
         display: flex;
         flex-direction: column;
@@ -194,6 +195,7 @@ body {
 }
 
 .sec-onboarding {
+    @include section-display();
     .intro {
         @extend .sec-features, .intro;
         color: components.$text-color;
@@ -219,8 +221,6 @@ body {
     background-color: components.$color-footer;
     padding: 5rem;
     /* background-image:  url("../assets/img/bg.jpg"); */
-    background-repeat: no-repeat;
-    background-position: 100%;
     @include section-display();
     .container-cta {
         width: 100%;

@@ -14,22 +14,17 @@
     padding: 1rem;
 }
 
-@mixin section-display-dfd {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 12rem;
-    height: 15rem;
-    margin: 3rem;
-    border-radius: 1rem;
-}
-
-.sec-menu-food {
+.sec-menu-g-desserts {
     display: flex;
     align-items: start;
     flex-direction: column;
     @include section-display();
+    .intro {
+        color: components.$text-color;
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
     hr {
         border: 1px solid white;
         width: 100%;
@@ -40,8 +35,10 @@
             font-size: 1.3rem;
         }
     }
-    .container-food {
+    .container-s-serving {
         @include section-display-menu();
     }
-
+    .container-i-menu {
+        @include section-display-menu();
+    }
 }
