@@ -1,34 +1,23 @@
 @use "../components";
 
 @mixin section-display {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
     width: 100%;
     margin: auto;
     padding: 3rem;
 }
 
 @mixin section-display-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 1rem;
-}
-
-@mixin section-display-dfd {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 12rem;
-    height: 15rem;
-    margin: 1rem;
-    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .sec-menu-frappuccino {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
     @include section-display();
     .intro {
         color: components.$text-color;
@@ -47,43 +36,9 @@
         }
     }
     .container-frappuccino-cafe {
-        color: components.$text-color-soft;
-        width: 100%;
         @include section-display-menu();
-        .cafe {
-            @include section-display-dfd();
-            background-color: components.$background-color-dfd;
-            .img-frappuccino-cafe {
-                width: 10rem;
-                height: 10rem;
-                filter: brightness(1.1);
-                border-radius: 100%;
-            }
-
-            h5 {
-                text-align: center;
-                font-size: 1.1rem;
-            }
-        }
     }
     .container-frappuccino-crema {
-        color: components.$text-color-soft;
-        width: 100%;
         @include section-display-menu();
-        .crema {
-            @include section-display-dfd();
-            background-color: components.$background-color-dfd;
-            .img-frappuccino-crema {
-                width: 10rem;
-                height: 10rem;
-                filter: brightness(1.1);
-                border-radius: 100%;
-            }
-
-            h5 {
-                text-align: center;
-                font-size: 1.1rem;
-            }
-        }
     }
 }

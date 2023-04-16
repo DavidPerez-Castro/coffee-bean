@@ -1,6 +1,9 @@
 @use "components";
 
 @mixin section-display {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     margin: auto;
     padding: 1rem;
@@ -26,9 +29,6 @@
 }
 
 .sec-contact {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     @include section-display();
     .intro {
         color: components.$text-color;
@@ -42,7 +42,7 @@
         @include section-display-menu();
         .ct {
             @include section-display-dfd();
-            background-color: components.$background-color-dfd;
+            background-color: components.$background-color-perfect;
             .subtitle {
                 margin: 0.5rem;
                 color: components.$text-color;
@@ -73,7 +73,6 @@
         }
     }
     .container-rs {
-        width: 20rem;
         @include section-display-menu();
         .rs {
             width: 100%;

@@ -14,7 +14,8 @@ $background-color: #161617;
 $background-color-soft: #212121;
 $text-color: white;
 $text-color-soft: #999;
-$background-color-dfd: #742306;
+$background-color-perfect: #62452D;
+$background-color-c-a: #DFE0E2;
 
 .btn-main {
     @include btn-base();
@@ -56,7 +57,18 @@ $background-color-dfd: #742306;
 }
 
 .icon-mn {
-    
+    background-color: transparent;
+    border: none;
+    color: $text-color;
+}
+
+.icon-shop {
+    background-color: transparent;
+    border: none;
+    color: $text-color;
+}
+
+.icon-exc {
     background-color: transparent;
     border: none;
     color: $text-color;

@@ -74,39 +74,39 @@ body {
     .container-hm {
         width: 100%;
         @include section-display-menu();
-    .home-cta {
-        @include section-display-dfd();
-        flex: 0.7;
-        .cta-text {
-            color: components.$color-main;
-        }
-        .home-title {
-            width: 18.5rem;
-            font-size: 2rem;
-            color: components.$text-color;
-            text-align: center;
-        }
-        .home-description {
-            max-width: 17rem;
-            color: components.$text-color;
-        }
-        .lead-magnet {
-            max-width: 17.5rem;
-            .input-col {
-                max-width: 14rem;
-                input {
-                    background-color: black;
-                    border-color: components.$background-color;
-                    color: components.$text-color;
+        .home-cta {
+            @include section-display-dfd();
+            flex: 0.7;
+            .cta-text {
+                color: components.$color-main;
+            }
+            .home-title {
+                width: 18.5rem;
+                font-size: 2rem;
+                color: components.$text-color;
+                text-align: center;
+            }
+            .home-description {
+                max-width: 17rem;
+                color: components.$text-color;
+            }
+            .lead-magnet {
+                max-width: 17.5rem;
+                .input-col {
+                    max-width: 14rem;
+                    input {
+                        background-color: black;
+                        border-color: components.$background-color;
+                        color: components.$text-color;
+                    }
                 }
             }
         }
-    }
-    .home-img img {
-        @include section-display-dfd();
-        width: 25vw;
-        height: 45vw;
-    }
+        .home-img img {
+            @include section-display-dfd();
+            width: 25vw;
+            height: 45vw;
+        }
     }
 }
 

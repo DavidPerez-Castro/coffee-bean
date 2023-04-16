@@ -40,6 +40,18 @@
   color: white;
 }
 
+.icon-shop {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.icon-exc {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
 .main-menu {
   margin-bottom: 0;
 }
@@ -475,12 +487,9 @@ body {
 }
 
 .sec-shop {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   margin: auto;
-  padding: 1rem;
+  padding: 3rem;
 }
 .sec-shop .intro {
   color: white;
@@ -492,44 +501,86 @@ body {
   border: 1px solid white;
   width: 100%;
 }
-.sec-shop .container-sp {
-  color: #999;
-  width: 100%;
+.sec-shop .subtitle {
+  color: white;
+}
+.sec-shop .subtitle h3 {
+  font-size: 1.3rem;
+}
+.sec-shop .container-one .box-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+  background-color: #62452D;
+}
+.sec-shop .container-one .box-items .box-img-cup {
+  max-width: 15rem;
+  margin: 3rem;
+}
+.sec-shop .container-one .box-items .contenedor-auto {
+  border-radius: 1rem;
+  margin: 3rem;
+  background-color: #DFE0E2;
+  width: 55rem;
+  height: 15rem;
+  padding: 3rem;
+  overflow: auto;
+}
+.sec-shop .container-one .box-items .contenedor-auto p {
+  text-align: center;
+}
+.sec-shop .container-s {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 1rem;
 }
-.sec-shop .container-sp .sp {
+.sec-shop .container-s .s-i {
+  background-color: #62452D;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 13rem;
-  height: 20rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%237c5c00' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
-}
-.sec-shop .container-sp .sp .img-sp {
   width: 10rem;
-  height: 10rem;
-  filter: brightness(1.1);
-  border-radius: 100%;
+  height: 12rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
 }
-.sec-shop .container-sp .sp h3 {
-  color: black;
-  text-align: center;
-  font-size: 1.3rem;
+.sec-shop .container-s .s-i .texts {
+  color: white;
+  margin-top: 1rem;
 }
-.sec-shop .container-sp .sp p {
-  text-align: center;
-  font-size: 0.8rem;
-  color: black;
+.sec-shop .container-prod .carousel-inner .carousel-item {
+  background-color: #62452D;
+  border-radius: 1rem;
+}
+.sec-shop .container-prod .carousel-inner .carousel-item .icon-exc {
+  position: absolute;
+  top: 10%;
+  right: 58%;
+}
+.sec-shop .container-prod .carousel-inner .carousel-item .icon-shop {
+  position: absolute;
+  bottom: 26%;
+  left: 58%;
+}
+.sec-shop .container-prod .carousel-inner .carousel-item .carousel-caption {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #81634B;
+  position: static;
+  bottom: 3rem;
 }
 
+@media (max-width: 768px) {
+  .sec-shop .container-one .box-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 .sec-contact {
   display: flex;
   align-items: center;
@@ -562,7 +613,7 @@ body {
   height: 20rem;
   margin: 1rem;
   border-radius: 1rem;
-  background-color: #742306;
+  background-color: #62452D;
 }
 .sec-contact .container-ct .ct .subtitle {
   margin: 0.5rem;
@@ -592,7 +643,6 @@ body {
   margin: 0.5rem;
 }
 .sec-contact .container-rs {
-  width: 20rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -746,64 +796,18 @@ body {
   font-size: 1.3rem;
 }
 .sec-menu-frappuccino .container-frappuccino-cafe {
-  color: #999;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 1rem;
-}
-.sec-menu-frappuccino .container-frappuccino-cafe .cafe {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 12rem;
-  height: 15rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  background-color: #742306;
-}
-.sec-menu-frappuccino .container-frappuccino-cafe .cafe .img-frappuccino-cafe {
-  width: 10rem;
-  height: 10rem;
-  filter: brightness(1.1);
-  border-radius: 100%;
-}
-.sec-menu-frappuccino .container-frappuccino-cafe .cafe h5 {
-  text-align: center;
-  font-size: 1.1rem;
+  padding: 1rem;
 }
 .sec-menu-frappuccino .container-frappuccino-crema {
-  color: #999;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 1rem;
-}
-.sec-menu-frappuccino .container-frappuccino-crema .crema {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 12rem;
-  height: 15rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  background-color: #742306;
-}
-.sec-menu-frappuccino .container-frappuccino-crema .crema .img-frappuccino-crema {
-  width: 10rem;
-  height: 10rem;
-  filter: brightness(1.1);
-  border-radius: 100%;
-}
-.sec-menu-frappuccino .container-frappuccino-crema .crema h5 {
-  text-align: center;
-  font-size: 1.1rem;
+  padding: 1rem;
 }
 
 .sec-menu-tea {

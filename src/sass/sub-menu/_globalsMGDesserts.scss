@@ -1,6 +1,9 @@
 @use "../components";
 
 @mixin section-display {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
     width: 100%;
     margin: auto;
     padding: 3rem;
@@ -15,9 +18,6 @@
 }
 
 .sec-menu-g-desserts {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
     @include section-display();
     .intro {
         color: components.$text-color;
