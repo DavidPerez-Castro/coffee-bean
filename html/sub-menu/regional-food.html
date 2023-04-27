@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Regional Food</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="/assets/img/coffee-logo.png" alt="logo"/>
+            </a>
+        </div>
+        <div class="menu d-md-block">
+            <ul class="main-menu show">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../menu.html">Menu</a></li>
+                <li><a href="../shop.html">Shop</a></li>
+                <li><a href="../contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="get-started">
+            <button class="btn-sec-s"><i class="bi bi-person"></i></button>
+            <button class="icon-mn"><i class="bi bi-menu-button-wide"></i></button>
+        </div>
+    </nav>
+    <!-- Menu Regional Food -->
+    <section class="sec-menu-r-food">
+        <div class="intro">
+            <h2>Regional Food</h2>
+        </div>
+        <hr/>
+        <div class="container-r-f">
+            <div class="card">
+                <img src="/assets/img/menu/food/regional-food/red-chilaquiles-chicken.png" class="card-img-top" alt="Red Chilaquiles with Chicken">
+                <div class="card-body">
+                    <h5 class="card-title">Red Chilaquiles with Chicken</h5>
+                    <p class="card-text">
+                        Chilaquiles are a kind of tortilla casserole cooked on
+                        the stove top.In its simplest form, it consists of a freshly
+                        made sauce into which fried tortillas are tossed with chicken.
+                    </p>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/img/menu/food/regional-food/swiss-enchiladas-chicken.png" class="card-img-top" alt="Suizas Enchiladas with Chicken">
+                <div class="card-body">
+                    <h5 class="card-title">Suizas Enchiladas with Chicken</h5>
+                    <p class="card-text">
+                        Enchiladas Suizas are made with corn tortillas stuffed with a
+                        creamy chicken mixture and topped a cream cheese sauce!
+                    </p>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/img/menu/food/regional-food/molletes-beans-cheese.png" class="card-img-top" alt="Molletes with Beans and Cheese">
+                <div class="card-body">
+                    <h5 class="card-title">Molletes with Beans and Cheese</h5>
+                    <p class="card-text">
+                        The molletes with beans and cheese are the
+                        typical Mexican breakfast.
+                    </p>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/img/menu/food/regional-food/red-spaghetti.png" class="card-img-top" alt="Red Spaghetti">
+                <div class="card-body">
+                    <h5 class="card-title">Red Spaghetti</h5>
+                    <p class="card-text">
+                        Full-bodied tomato sauce with oregano, garlic,
+                        onions and brown sugar, served over hot spaghetti.
+                    </p>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="sec-footer">
+        <div class="container-ft">
+            <div class="ft">
+                <p>
+                    &copy; DavidPérezCastro, All Rights Reserved.
+                </p>
+            </div>
+            <div class="sn">
+                <button class="btn-sn"><a href="https://github.com/DavidPerez-Castro" target="_blank">
+                    <i class="bi bi-github" id="gt"></i></a>
+                </button>
+                <button type="button" class="btn-sn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="david2711053145@gmail.com">
+                    <i class="bi bi-envelope-fill" id="en"></i>
+                </button>
+                <button class="btn-sn"><a href="https://www.linkedin.com/in/david-perez99" target="_blank">
+                    <i class="bi bi-linkedin" id="in"></i></a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>

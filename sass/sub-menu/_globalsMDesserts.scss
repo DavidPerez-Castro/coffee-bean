@@ -1,0 +1,194 @@
+@use "../components";
+
+@mixin section-display {
+    width: 100%;
+    margin: auto;
+    padding: 3rem;
+}
+
+@mixin section-display-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.sec-menu-desserts {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    @include section-display();
+    .intro {
+        color: components.$text-color;
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    hr {
+        border: 1px solid white;
+        width: 100%;
+    }
+    .subtitle {
+        color: components.$text-color;
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+    .container-ck {
+        @include section-display-menu();
+        .card {
+            width: 25vw;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+    .container-wf {
+        @include section-display-menu();
+        .card {
+            width: 25vw;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+    .container-ch {
+        @include section-display-menu();
+        .card {
+            width: 25vw;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .sec-menu-desserts {
+        padding: 2.3rem;
+        .container-ck {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 65vw;
+            }
+        }
+        .container-wf {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 65vw;
+            }
+        }
+        .container-ch {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 65vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .sec-menu-desserts {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .sec-menu-desserts {
+        padding: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-menu-desserts {
+        padding: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .sec-menu-desserts {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .sec-menu-desserts {
+        padding: 0.7rem;
+        .container-ck {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 65vw;
+            }
+        }
+        .container-wf {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 65vw;
+            }
+        }
+        .container-ch {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 65vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .sec-menu-desserts {
+        padding: 0.8rem;
+        .container-ck {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 85vw;
+            }
+        }
+        .container-wf {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 85vw;
+            }
+        }
+        .container-ch {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .card{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 85vw;
+            }
+        }
+    }
+}
